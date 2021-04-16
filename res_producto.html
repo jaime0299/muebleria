@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/estiloregistro.css">
+    <script src="/js/validar.js"></script>
+  </head>
+<body>
+    <form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+    <h2 class="form__titulo">Registra producto</h2>
+    <div class="contenedor-inputs">
+      <input type="text" id="codigo" name="codigo" placeholder="Codigo" class="input-100" >
+        <input type="text" id="clave" name="clave" placeholder="Clave" class="input-100" >
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-100" >
+        <input type="text" id="marca" name="marca" placeholder="Marca" class="input-100" >
+        <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" class="input-100" >
+        <input type="number" id="precio" name="precio" placeholder="Precio" class="input-100" >
+        <input type="text" id="stock" name="stock" placeholder="Stock" class="input-100" >
+        <input type="text" id="proveedor" name="proveedor" placeholder="Proveedor" class="input-100" >
+        <input type="text" id="sucursal" name="sucursal" placeholder="Sucursal" class="input-100" >
+        <input type="date" id="fecha" name="fecha" value="0000-00-00" min="2020-01-01" max="2020-12-31" class="input-100">
+        <input type="checkbox" id="chec" name="estrella" value="1">Estrella
+        <input type="submit" value="Registrar" class="btn-enviar">
+    </div>
+  </form>
+ </body>
+</html>

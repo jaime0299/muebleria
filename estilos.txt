@@ -1,0 +1,41 @@
+estilos_inventario.css
+/*--------------------ESTILOS DE PAGINADORA---------------------*/
+.paginador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginador ul{
+   padding:15px;
+   list-style: none;
+ 
+   margin-top: 15px;
+   display: flex;
+
+}
+
+.paginador a, .pageSelected{
+    background: white;
+    color:#428bca;
+    border:1px solid #ddd;
+    padding: 5px;
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: 35px;
+}
+
+.paginador a:hover{
+    background: #ddd;
+    text-decoration: none;
+}
+
+.pageSelected{
+    color:#fff;
+    background:#428bca;
+    border: 1px solid #428bca;
+}
+
+.p-item-s a{width:auto;}
+.p-item-a a{width:auto;}

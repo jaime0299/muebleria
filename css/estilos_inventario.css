@@ -1,0 +1,407 @@
+/*<--------CONFIGURACION BASICA------->*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    background: #edf3f8 !important;
+}
+
+
+/*<--------AQUI INICIA EL HEADER------->*/
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header .contenedor-nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+    color: white;
+    transition: .3s ease all;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+header .contenedor-logo-muebleria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+
+header .contenedor-menu {
+    width: 70%;
+}
+
+
+header .logo-muebleria {
+    width: 181px;
+    height: 95px;
+}
+
+
+
+.menu-buttons a {
+    display: block;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    transition: 0.2s ease all;
+    height: 100%;
+}
+
+.menu-buttons a:hover {
+    color: white;
+    background: #2c86cf;
+    transition: .3s;
+    font-size: 16px;
+}
+
+
+div.contenedor {
+    width: 14%;
+    height: 95px;
+    float: left;
+    transition: height .4s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+div#uno {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+
+div#dos {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+div#tres {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+div#cuatro {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+
+div#cinco {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+div#seis {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+
+div#siete {
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+}
+
+
+
+
+img.icon {
+    display: block;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, .15);
+    width: 30px;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+    transition: box-shadow .4s;
+}
+
+
+
+p.texto {
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    opacity: .6;
+    transition: .4s;
+    margin-top: 12% !important;
+    line-height: 0.5;
+}
+
+.contenedor:hover p.texto {
+    opacity: 1;
+}
+
+div.contenedor:hover img.icon {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px -1px 11px 5px rgba(255, 255, 255, 0.616);
+    background: #9CECFB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0241a7, #3987ad, #8aecff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0241a7, #3987ad, #8aecff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.barra-separadora {
+    width: 100%;
+    background: #45525f;
+    height: 15px;
+    /* auto */
+    text-align: center;
+    padding: 2px;
+}
+
+/*<---------AQUI INICIA EL CONTENEDOR DE MAIN EN HTML---------->*/
+
+.contenedor-externo {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contenedor-sr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 48%;
+}
+
+.input-buscar {
+    display: flex;
+}
+
+.boton-registrar {
+    padding-right: 10px;
+}
+
+.boton-verificar{
+    padding-right: 10px;
+}
+
+.search-icon {
+    height: 30px;
+    width: 32px;
+    padding: 3px;
+    background: #9CECFB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1366ec, #6de0f7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1366ec, #6de0f7);
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.form-control {
+    height: calc(1.3em + .77rem) !important;
+    font-size: .9rem !important;
+    border-radius: .25rem 0 0 .25rem !important;
+}
+
+.btn {
+    line-height: 1 !important;
+    width: auto;
+}
+
+
+
+
+/*------------------CONFIGURACION RESPONSIVE------------------*/
+
+/*-----Resolucion para dispositivos mobiles muy pequeños------*/
+
+@media(max-width:575px) and (max-width:767px) {
+
+    header .contenedor-logo-muebleria {
+        width: 100%;
+    }
+    header .contenedor-menu {
+        width: 70%;
+    }
+    header .contenedor-nav {
+        flex-wrap: wrap;
+        background: linear-gradient(to top, #0072ff, #6edfff);
+        
+    }
+    header .contenedor-menu {
+        width: 100%;
+    }
+    div.contenedor {
+        width: 14.2%;
+        height: 81px;
+    }
+    p.texto {
+        margin-top: 30% !important;
+        font-size: .50em;
+    }
+    .menu-buttons a {
+        padding: 11px;
+        font-size: 13px;
+    }
+    .menu-buttons a:hover {
+        font-size: 13.5px;
+    }
+    /*-----------------MAIN CONTENIDO---------------*/
+    .btn {
+        font-size: 9px !important;
+        padding: .375rem 0.2rem  .375rem 0.2rem !important;
+        
+    }
+    .form-control {
+        font-size: 8px !important;
+        width: 80% !important;
+        height: calc(1.3em + .85rem) !important;
+    }
+    .search-icon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .contenedor-externo {
+        width: 95%;}
+
+    .contenedor-sr {
+        width: 95%;
+    }
+    img.icon {
+        width: 32px;
+    }
+    body {
+        line-height: 0 !important;
+    }
+
+    .text-sucursal{
+        font-size: 12px;
+    }
+    .text-ordenar{
+        font-size: 12px;
+    }
+
+    .select-resp{
+        font-size: 12px !important;
+    }
+
+    .paginador a, .pageSelected{
+        padding: 15px !important;
+    }
+
+    .titulo-sv{
+        font-size: 2.3rem !important;
+        
+    
+    }
+
+    .responsive-btns{
+        display: inline-block !important;
+    }
+    
+}
+
+
+
+/*---------Resolucion para dispositivos mobiles pequeños--------*/
+
+/*--------------------Resolucion para tablets------------------*/
+@media(min-width:768px) and (max-width:1024px) {
+
+    p.texto {
+        font-size: .7em;
+        color: white;
+        text-align: center;
+        opacity: .6;
+        transition: .4s;
+        margin-top: 40% !important;
+        line-height: 0.1;
+    }
+    .menu-buttons a {
+        font-size: 13px;
+    }
+    .menu-buttons a:hover {
+        font-size: 13.5px;
+    }
+    /*-----------------MAIN CONTENIDO---------------*/
+    .btn {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+        width: 70% !important;
+    }
+    .search-icon {
+        height: 27px;
+        width: 27px;
+    }
+    .contenedor-externo {
+        width: 100%;}
+
+    .contenedor-sr {
+        width: 70%;
+        justify-content: end;
+    }
+    
+}
+
+/*----------------Resolucion para PC de escritorio------------*/
+@media(min-width:1025px) {}/* Se aplica lo que hay por defecto al principio
+
+
+/*--------------------ESTILOS DE PAGINADORA---------------------*/
+.paginador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginador ul{
+   padding:15px;
+   list-style: none;
+ 
+   margin-top: 15px;
+   display: flex;
+
+}
+
+.paginador a, .pageSelected{
+    background: white;
+    color:#428bca;
+    border:1px solid #ddd;
+    padding: 5px;
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: 35px;
+}
+
+.paginador a:hover{
+    background: #ddd;
+    text-decoration: none;
+}
+
+.pageSelected{
+    color:#fff;
+    background:#428bca;
+    border: 1px solid #428bca;
+}
+
+.p-item-s a{width:auto;
+
+    border-bottom-right-radius: .25rem;
+}
+.p-item-a a{width:auto;
+
+    border-bottom-right-radius: .25rem;
+}
+
+
